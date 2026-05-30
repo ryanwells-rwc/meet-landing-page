@@ -1,0 +1,364 @@
+/* red-hat-display-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/red-hat-display-v21-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* red-hat-display-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/red-hat-display-v21-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: #fafafa;
+  letter-spacing: 0;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.text-preset-1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.text-preset-2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.text-preset-3 {
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.25rem;
+}
+
+.text-preset-4 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.text-preset-5 {
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.color-white {
+  color: #fafafa;
+}
+
+.color-slate-900 {
+  color: #28283d;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  overflow-x: hidden;
+}
+
+.logo-container {
+  margin-top: 3rem;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-container .left-image {
+  background-image: url("../img/tablet/image-hero.png");
+  background-size: cover;
+  background-position: center;
+  width: 433px;
+  height: 160px;
+}
+.hero-container .middle-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.hero-container .middle-content .hero-title {
+  font-size: 2.5rem;
+  color: #28283d;
+}
+.hero-container .middle-content .hero-paragraph {
+  font-size: 1rem;
+  color: #87879d;
+  padding: 0 4rem;
+  line-height: 1.5;
+}
+.hero-container .middle-content .hero-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.hero-container .middle-content .hero-button-container .btn-top-download {
+  border-radius: 29px;
+  background-color: #4d96a9;
+  border: none;
+  color: #fafafa;
+  padding: 1rem 2.5rem;
+}
+.hero-container .middle-content .hero-button-container .btn-top-download span {
+  color: #8fe3f9;
+}
+.hero-container .middle-content .hero-button-container .btn-info {
+  border-radius: 29px;
+  background-color: #855fb1;
+  border: none;
+  color: #fafafa;
+  padding: 1rem 2.5rem;
+}
+
+.number-1-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.number-1-container .vertical-line {
+  border-left: 1px solid #d1d1df;
+  height: 80px;
+}
+.number-1-container span.text-preset-5 {
+  color: #87879d;
+  border-radius: 999px;
+  border: 1px solid #d1d1df;
+  padding: 16px 19px;
+}
+.number-1-container span.number-2-text {
+  background-color: #fafafa;
+}
+
+.people-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.people-container img {
+  border-radius: 8px;
+}
+
+.modern-use-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.modern-use-container p.uppercase {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #4d96a9;
+}
+.modern-use-container h2.text-preset-2 {
+  font-size: 2rem;
+  color: #28283d;
+  padding: 0 2rem;
+}
+.modern-use-container p.modern-use-paragraph {
+  font-size: 1rem;
+  color: #87879d;
+  line-height: 1.5;
+  margin-top: 1rem;
+  padding: 0 2.5rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -1.75rem;
+  position: relative;
+  z-index: -1;
+}
+.footer-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(77, 150, 168, 0.9);
+}
+.footer-container img {
+  object-fit: cover;
+}
+.footer-container .footer-image {
+  width: 100%;
+  height: 374px;
+  background-image: url("../img/mobile/image-footer.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.footer-container .footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  color: #fafafa;
+  position: absolute;
+  z-index: 10;
+}
+.footer-container .footer-text .footer-header {
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+.footer-container .footer-text .footer-body {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 0 2rem;
+}
+.footer-container .footer-text .btn-bottom-download {
+  border-radius: 29px;
+  background-color: #855fb1;
+  border: none;
+  color: #fafafa;
+  padding: 1rem 2.5rem;
+}
+.footer-container .footer-text .btn-bottom-download span {
+  color: #d9b8ff;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container .left-image {
+    height: 303px;
+    width: 100%;
+  }
+  .hero-container .middle-content {
+    margin-top: 4.5rem;
+  }
+  .hero-container .middle-content .hero-title {
+    font-size: 3rem;
+  }
+  .hero-container .middle-content .hero-paragraph {
+    padding: 0 10rem;
+  }
+  .hero-container .middle-content .hero-button-container {
+    flex-direction: row;
+  }
+  .mt-700 {
+    margin-top: 3.5rem;
+  }
+  .people-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+  .modern-use-container {
+    padding: 0 7rem;
+  }
+  .modern-use-container p.text-preset-3.uppercase {
+    font-size: 0.875rem;
+  }
+  .modern-use-container h2.text-preset-2 {
+    font-size: 2.25rem;
+  }
+  .footer-container .footer-image {
+    background-image: url("../img/tablet/image-footer.jpg");
+  }
+  .footer-container .footer-text .footer-header {
+    font-size: 2.25rem;
+  }
+  .footer-container .footer-text p.footer-body {
+    padding: 0 8rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero-container {
+    display: grid;
+    grid-template-columns: 394px 1fr 394px;
+    grid-template-areas: "left-image middle-content right-image";
+    gap: 7.5rem;
+    width: 103vw;
+  }
+  .hero-container .left-image, .hero-container .right-image {
+    width: 394px;
+    height: 303px;
+  }
+  .hero-container .left-image {
+    background-image: url("../img/desktop/image-hero-left.png");
+    grid-area: left-image;
+  }
+  .hero-container .middle-content {
+    grid-area: middle-content;
+  }
+  .hero-container .middle-content .hero-title {
+    font-size: 4rem;
+  }
+  .hero-container .middle-content .hero-paragraph {
+    padding: 0;
+    font-size: 1.125rem;
+  }
+  .hero-container .right-image {
+    background-image: url("../img/desktop/image-hero-right.png");
+    grid-area: right-image;
+    background-size: cover;
+    background-position: center;
+  }
+  .people-container img {
+    height: 256px;
+    width: auto;
+  }
+  .modern-use-container {
+    padding: 0 32%;
+  }
+  .modern-use-container p.uppercase {
+    font-size: 1rem;
+  }
+  .modern-use-container h2.text-preset-2 {
+    font-size: 2.5rem;
+  }
+  .modern-use-container p.modern-use-paragraph {
+    font-size: 1.125rem;
+    padding: 0;
+  }
+  .footer-container .footer-image {
+    background-image: url("../img/desktop/image-footer.jpg");
+  }
+  .footer-container .footer-text {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    place-items: center;
+    height: 100%;
+    padding: 0;
+  }
+  .footer-container .footer-text .footer-header, .footer-container .footer-text .footer-body, .footer-container .footer-text .btn-bottom-download {
+    margin: 0;
+  }
+  .footer-container .footer-text .footer-header, .footer-container .footer-text .footer-body {
+    text-align: left;
+  }
+  .footer-container .footer-text .footer-header {
+    font-size: 2.5rem;
+    width: 70%;
+  }
+  .footer-container .footer-text .footer-body {
+    font-size: 1.125rem;
+    width: 90%;
+    margin-right: 23%;
+  }
+  .footer-container .footer-text .btn-bottom-download {
+    margin-right: 100%;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
