@@ -369,6 +369,7 @@ main {
   .footer-container .footer-text .btn-bottom-download {
     margin-right: 100%;
     width: 100%;
+    transition: background-color 0.3s ease-in-out;
   }
   .footer-container .footer-text .btn-bottom-download:hover, .footer-container .footer-text .btn-bottom-download:focus {
     background-color: #b18bdd;

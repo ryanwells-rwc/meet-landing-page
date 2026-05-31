@@ -471,6 +471,7 @@ main {
       .btn-bottom-download {
         margin-right: 100%;
         width: 100%;
+        transition: background-color 0.3s ease-in-out;
 
         &:hover, &:focus {
           background-color: $purple-hover;
