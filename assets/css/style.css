@@ -188,7 +188,7 @@ main {
   align-items: center;
   margin-top: -1.75rem;
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 .footer-container::after {
   content: "";
@@ -307,6 +307,17 @@ main {
     padding: 0;
     font-size: 1.125rem;
   }
+  .hero-container .middle-content .btn-top-download, .hero-container .middle-content .btn-info {
+    transition: background-color 0.3s ease-in-out;
+  }
+  .hero-container .middle-content .btn-top-download:hover, .hero-container .middle-content .btn-top-download:focus {
+    background-color: #71c0d4;
+    cursor: pointer;
+  }
+  .hero-container .middle-content .btn-info:hover, .hero-container .middle-content .btn-info:focus {
+    background-color: #b18bdd;
+    cursor: pointer;
+  }
   .hero-container .right-image {
     background-image: url("../img/desktop/image-hero-right.png");
     grid-area: right-image;
@@ -358,6 +369,10 @@ main {
   .footer-container .footer-text .btn-bottom-download {
     margin-right: 100%;
     width: 100%;
+  }
+  .footer-container .footer-text .btn-bottom-download:hover, .footer-container .footer-text .btn-bottom-download:focus {
+    background-color: #b18bdd;
+    cursor: pointer;
   }
 }
 

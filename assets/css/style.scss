@@ -43,8 +43,10 @@ $size-2000: calc(160 / 16 * 1rem);
 
 $cyan-300: #8fe3f9;
 $cyan-600: #4d96a9;
+$cyan-hover: #71c0d4;
 $purple-300: #d9b8ff;
 $purple-600: #855fb1;
+$purple-hover: #b18bdd;
 $slate-300: #d1d1df;
 $slate-600: #87879d;
 $slate-900: #28283d;
@@ -240,7 +242,7 @@ main {
   align-items: center;
   margin-top: -$size-350;
   position: relative;
-  z-index: -1;
+  z-index: 0;
 
   &::after {
     content: '';
@@ -390,6 +392,20 @@ main {
         padding: 0;
         font-size: $size-225;
       }
+
+      .btn-top-download, .btn-info {
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      .btn-top-download:hover, .btn-top-download:focus {
+        background-color: $cyan-hover;
+        cursor: pointer;
+      }
+
+      .btn-info:hover, .btn-info:focus {
+        background-color: $purple-hover;
+        cursor: pointer;
+      }
     }
 
     .right-image {
@@ -461,8 +477,13 @@ main {
       .btn-bottom-download {
         margin-right: 100%;
         width: 100%;
-        //text-align: right;
-        //width: 17%;
+        //position: relative;
+        //z-index: 10;
+
+        &:hover, &:focus {
+          background-color: $purple-hover;
+          cursor: pointer;
+        }
       }
     }
   }
