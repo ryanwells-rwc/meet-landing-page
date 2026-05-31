@@ -127,7 +127,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  //gap: $size-300;
 
   .left-image {
     background-image: url('../img/tablet/image-hero.png');
@@ -362,12 +361,10 @@ main {
   .hero-container {
     display: grid;
     grid-template-columns: 394px 1fr 394px;
-    //grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
       'left-image middle-content right-image';
     gap: $size-1500;
     width: 103vw;
-    //margin: 0;
 
     .left-image, .right-image {
       width: 394px;
@@ -381,8 +378,6 @@ main {
 
     .middle-content {
       grid-area: middle-content;
-      //padding: 0;
-      //margin: 0;
 
       .hero-title {
         font-size: $size-800;
@@ -465,7 +460,6 @@ main {
       .footer-header {
         font-size: $size-500;
         width: 70%;
-        //flex: 0 0 200px;
       }
 
       .footer-body {
@@ -477,8 +471,6 @@ main {
       .btn-bottom-download {
         margin-right: 100%;
         width: 100%;
-        //position: relative;
-        //z-index: 10;
 
         &:hover, &:focus {
           background-color: $purple-hover;
