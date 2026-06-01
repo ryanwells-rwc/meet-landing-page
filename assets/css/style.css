@@ -86,8 +86,8 @@ main {
   background-image: url("../img/tablet/image-hero.png");
   background-size: cover;
   background-position: center;
-  width: 433px;
-  height: 160px;
+  width: 27.0625rem;
+  height: 10rem;
 }
 .hero-container .middle-content {
   display: flex;

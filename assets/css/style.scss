@@ -132,8 +132,8 @@ main {
     background-image: url('../img/tablet/image-hero.png');
     background-size: cover;
     background-position: center;
-    width: 433px;
-    height: 160px;
+    width: calc(433 / 16 * 1rem);
+    height: calc(160 / 16 * 1rem);
   }
 
   .middle-content {
